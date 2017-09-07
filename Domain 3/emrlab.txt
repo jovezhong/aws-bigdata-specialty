@@ -11,7 +11,7 @@ O_CLERK STRING,
 O_SHIPPRIORITY INT, 
 O_COMMENT STRING) 
 ROW FORMAT DELIMITED FIELDS TERMINATED BY '|' 
-LOCATION 's3://yourbucketname/emrdata/';
+LOCATION 's3://911misc/emrdata/';
 
 
 create external table lineitem (
@@ -31,7 +31,7 @@ L_RECEIPTDATE STRING,
 L_SHIPINSTRUCT STRING,
 L_SHIPMODE STRING, L_COMMENT STRING)
 ROW FORMAT DELIMITED FIELDS TERMINATED BY '|'
-LOCATION 's3://yourbucketname/emrdata/';
+LOCATION 's3://911misc/emrdata/';
 
 
 Spark SQL setting (Turn off verbose logging):
